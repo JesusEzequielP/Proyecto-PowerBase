@@ -1,6 +1,5 @@
-/*INDEX....................................................*/
+/*INDEX.....................................................................................*/
 /*Header-INDEX.............................................*/
-
 
 .header{
     background-color: #fcebb6;
@@ -14,21 +13,45 @@
     font-family: Arial, Helvetica, sans-serif;
     flex-wrap:wrap
 }
+
 /*Logo Header...............................................*/
 .logo{
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
+    
 }
 /*titulos y subtitulos Header................................*/
 .titulo{
     margin: 0%;
-    padding-left: 3rem;
+    display: flex;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .subtitulo{
     margin: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 356px) {
+    .titulo{
+        font-size: 1.5em;
+        padding-top: 1rem;
+    }
+    .subtitulo{
+        font-size: 1em;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .Findex{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        }
+    .menu-inicial{
+        padding-right: 0%;
+    }
 }
 
 /*Main-INDEX.................................................*/
@@ -38,6 +61,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Clase de boostrap editada*/
+.navbar-expand-lg{
+    background-color: #ffca67 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+
+/*codigo CSS de enlaces viejos, antes de usar boostrap
 .separador{
     display: flex;
     justify-content: center;
@@ -55,6 +86,7 @@
     color: #f07818;
     font-size: larger;
 }
+*/
 
 /*imagen principal index..........................................*/
 .img-ppal{
@@ -122,7 +154,7 @@
 }
 
 
-/*PRODUCTO...........................................................*/
+/*PRODUCTO............................................................................................*/
 
 
 /*Header...........................................................*/
@@ -138,7 +170,7 @@
     font-size: medium;
 }
 
-/*MAIN...........................................................*/
+/*MAIN..................................................................*/
 /*titulo main...........................................................*/
 .tituloP{
     margin: 0;
@@ -160,7 +192,7 @@
     margin: 0rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*imagenes del producto...........................................................*/
+/*imagenes del producto.................................................*/
 .warmerP{
     width: 15rem;
     height: 15rem;
@@ -170,7 +202,7 @@
 .textoP{
     width: 15rem;
 }
-/*contenido main...........................................................*/
+/*contenido main................................................*/
 .mainP{
     display: flex;
     justify-content: space-around;
@@ -178,16 +210,16 @@
 }
 
 
-/*NOSOTROS...........................................................*/
+/*NOSOTROS...............................................................................................*/
 
-/*HEADER*/
+/*HEADER.......................................................*/
 
 /*MAIN*/
 .fondo-mainN{
    font-family: Arial, Helvetica, sans-serif;
     background-color: #d9e8ae; /*link de paleta colores: https://paletadecolores.com.ar/paleta/5e412f/fcebb6/78c0a8/f07818/f0a830/*/
 }
-/*Titulo ppal main...........................................................*/
+/*Titulo ppal main...............................................*/
 .tituloN{
     margin: 0;
     padding: 1rem;
@@ -195,36 +227,61 @@
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/*Mapa ubicacion...........................................................*/
+/*Mapa ubicacion.................................................*/
 .mapa{
     width: 25rem;
     height: 25rem;
     margin: 0%;
     padding: 1rem;
 }
-/*contenido main...........................................................*/
+/*contenido main...................................................*/
 .Mnosotros{
     display: flex;
+    flex-wrap: wrap;
 }
-/*titulo y texto main...........................................................*/
+/*titulo y texto main...............................................*/
 .titulo-ubi{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
-    padding-left: 1rem
+    padding-left: 1rem;
+    flex-wrap: wrap;
+    
 }
 .texto-ubi{
     margin: 0%;
     padding: 1rem;
+    width: 20rem;
 }
 
-/*RESPONABLES EMPRESA...........................................................*/
+
+@media only screen and (max-width: 435px) {
+    .mapa{
+        width: auto;
+        height:16rem;   
+    }
+    .texto-ubi{
+        width: auto;
+    }
+    .tituloN{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 332px) {
+    .mapa{
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+/*RESPONABLES EMPRESA..................................................................................*/
 
 .body{
     margin: 0%;
 }
 
-/*MAIN...........................................................................*/
+/*MAIN..................................................................*/
 
 .tituloD{
         margin: 0;
@@ -279,20 +336,40 @@ padding-bottom: 1rem;
     width: 15rem;
 }
 
+@media only screen and (max-width: 615px) {
+    .tituloD{
+        font-size: 1.5em
+    }
+    .titulo{
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+}
 
-/*OPINIONES.......................................................*/
 
+/*OPINIONES........................................................................................*/
+body{
+    margin: 0%;
+}
 /*MAIN............................................................*/
 /*formularios....................................................*/
 .titulo-form{
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .formulario {
     width: 45%; 
     float: left; 
-    margin: 2rem; 
+    margin: 1rem; 
 }
 
  .campo {
@@ -313,7 +390,7 @@ padding-bottom: 1rem;
     height: 7rem; 
 }
 
-/*boton enviar...................................................................*/
+/*boton enviar..........................................................*/
 .boton {
     background-color: rgb(105, 192, 54); 
     color: white;
@@ -322,16 +399,17 @@ padding-bottom: 1rem;
     cursor: pointer; 
 }
 
-/*estilos de letra de los forms..................................................*/
+/*estilos de letra de los forms..........................................*/
 .letra-form {
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
     font-size: small;
 }
 
-/*color fondo main.................................................................*/
+/*color fondo main.......................................................*/
 .mainO {
     background-color: #fde98c; 
     overflow: auto;
     margin: 0rem;
 }
+
