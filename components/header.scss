@@ -1,0 +1,65 @@
+.header{
+    background-color: #fcebb6;
+    height: auto;
+    margin: 0%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap:wrap;
+}
+
+/*Logo Header...............................................*/
+.logo{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+
+}
+/*titulos y subtitulos Header................................*/
+.titulo{
+    margin: 0%;
+    padding-left: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subtitulo{
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-inicial{
+    font-size: smaller;
+    color: #5e412f;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    &:hover{
+        color: #78c0a8;
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 356px) {
+    .titulo{
+        font-size: 1.5em;
+        padding-top: 1rem;
+    }
+    .subtitulo{
+        font-size: 1em;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .Findex{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        }
+    .menu-inicial{
+        padding-right: 0%;
+    }
+}    
