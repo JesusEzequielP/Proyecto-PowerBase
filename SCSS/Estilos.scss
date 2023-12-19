@@ -1,0 +1,307 @@
+/*INDEX....................................................*/
+/*INDEX.....................................................................................*/
+
+/*Header-INDEX.............................................*/
+
+@import "../components/header.scss";
+
+body{
+    margin: 0%;
+}
+
+/*Main-INDEX.................................................*/
+.Mindex{
+
+    background-color: #5e412f;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*Clase de boostrap editada*/
+    .navbar-expand-lg{
+        background-color: #ffca67 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+
+    /*imagen principal index..........................................*/
+    .img-ppal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .fondo2 {
+        width: 100%;
+        height:25% ;
+    }
+    .fondo1 {
+        width: 100%;
+        height: 25%;  
+    }
+}
+
+/*Footer-INDEX.....................................................*/    
+.Findex{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: auto;
+    background-color: #333; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #aaa8a2; 
+    text-align: center; 
+    flex-wrap: wrap;
+}
+/*Parte derecha footer.............................................*/
+/*contactos........................................................*/
+.contactos{
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+/*telefonos de contacto............................................*/
+.telefonos{
+    font-size: small;
+    color: #aaa8a2;
+    flex-direction: column;
+    &:hover{
+        color: #f0a830;
+    }
+}
+
+/*parte izquierda footer............................................*/
+/*instagram empresa.................................................*/
+.ig-pwrbase{
+    text-decoration: none;
+    color: #aaa8a2;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    &:hover{
+        color: #f0a830;
+        font-size: larger;
+    }
+}
+
+/*Red Social...........................................................*/
+.izq-footer{
+    padding-left: 2rem
+}
+
+/*PRODUCTO............................................................................................*/
+/*complemento header*/
+.menu-inicial{
+    font-size: smaller;
+    color: #5e412f;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    &:hover{
+        color: #78c0a8;
+        font-size: medium;
+    }
+}
+
+/*MAIN..................................................................*/
+/*titulo main...........................................................*/
+@import"../base/Titulos_main.scss";
+
+/*texto main...........................................................*/
+.fuente-texto{
+    margin: 0%;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+/*fondo main...........................................................*/
+.fondo-mainP{
+    background-color: #bfe3c0;
+    margin: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*imagenes del producto.................................................*/
+.warmerP{
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid white;
+    flex-wrap: wrap;
+}
+.textoP{
+    width: 15rem;
+}
+/*contenido main................................................*/
+.mainP{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*NOSOTROS...............................................................................................*/
+/*MAIN......................*/
+.fondo-mainN{
+    font-family: Arial, Helvetica, sans-serif;
+     background-color: #d9e8ae; /*link de paleta colores: https://paletadecolores.com.ar/paleta/5e412f/fcebb6/78c0a8/f07818/f0a830/*/
+ }
+ /*Titulo ppal main...............................................*/
+
+ /*Mapa ubicacion.................................................*/
+ .mapa{
+     width: 25rem;
+     height: 25rem;
+     margin: 0%;
+     padding: 1rem;
+ }
+ /*contenido main...................................................*/
+ .Mnosotros{
+     display: flex;
+     flex-wrap: wrap;
+
+     /*titulo y texto main...............................................*/
+    .titulo-ubi{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    flex-wrap: wrap;
+    }
+    .texto-ubi{
+        margin: 0%;
+        padding: 1rem;
+        width: 20rem;
+    }
+ }
+ 
+
+ @media only screen and (max-width: 435px) {
+     .mapa{
+         width: auto;
+         height:16rem;   
+     }
+     .texto-ubi{
+         width: auto;
+     }
+     .tituloN{
+         font-size: 1.5em;
+     }
+ }
+ 
+ @media only screen and (max-width: 332px) {
+     .mapa{
+         width: 15rem;
+         height: 15rem;
+     }
+ }
+
+ /*RESPONABLES EMPRESA..................................................................................*/
+ /*MAIN..................................................................*/
+
+.Mdirectores{
+background-color: #fde98c;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*ubicaion imagenes..................................................*/
+.directores1{
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+padding-bottom: 1rem;
+}
+
+.directores2{
+display: flex;
+align-items: center;
+justify-content: space-around; 
+flex-wrap: wrap;
+padding-top: 1rem;
+padding-bottom: 2rem;
+}
+
+/*imagenes de directores..................................................*/
+.Dimg{
+width: 15rem;
+height: 15rem;
+border-radius: 50%;
+}
+
+/*texto directores..................................................*/
+.presentacion{
+display: flex;
+text-align: center;
+justify-content: center;
+flex-wrap: wrap;
+
+.textoD{
+    width: 15rem;
+    padding-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+.tituloD{
+    font-size: 1.5em
+}
+.titulo{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+}
+
+/*OPINIONES........................................................................................*/
+/*MAIN............................................................*/
+/*formularios....................................................*/
+.titulo-form{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .formulario {
+        width: 45%; 
+        float: left; 
+        margin: 1rem; 
+    }
+    
+     .campo {
+        margin-bottom: 1rem;
+     }
+    
+     .campo label {
+        display: block; 
+        font-weight: bold; 
+     }
+    
+    .campo input, .campo textarea {
+        width: 100%; 
+        padding: 0.5rem; 
+    }
+    
+    .campo textarea {
+        height: 7rem; 
+    }
+}
+
+/*boton enviar..........................................................*/
+@import"../base/boton_enviar.scss";
+
+/*estilos de letra de los forms..........................................*/
+.letra-form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: small;
+}
+
+/*color fondo main.......................................................*/
+.mainO {
+    background-color: #fde98c; 
+    overflow: auto;
+    margin: 0rem;
+}
