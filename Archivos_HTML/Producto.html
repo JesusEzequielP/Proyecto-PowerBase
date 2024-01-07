@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../Estilos/style.css">
     <link rel="stylesheet" href="../index.html">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body class="body">
 
@@ -24,22 +25,64 @@
 
 <!--main-->
 <main class="fondo-mainP">
+
+    <!--Enlaces a demas archivos html (usamos Boostrap)-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/Archivos_HTML/Producto.html">Warmer, nuestro producto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Archivos_HTML/Nosotros.html">Acerca de nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Archivos_HTML/Directores.html">Responsables de la empresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Archivos_HTML/Opiniones.html">¡Dejanos tu opinion!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <h1 class="titulos">NUESTRO PRODUCTO</h1>
-    <p class="fuente-texto">Este innovador producto se trata de una base que mantiene caliente cualquier tipo de infusion, es ideal para cualquier tipo de taza ya que no calienta, sino que mantiene el calor por un buen rato, evitando esos momentos donde uno se olvida de la misma infusion y esta se enfria. Este producto tiene el nombre de WARMER, y esta pensado para todas aquellas personas que trabajan con una computadora de escritorio,notebook o cualquier otro dispositivo donde se pueda conectar el warmer por medio de cable USB. Lo que lo hace diferente es que es un producto pensado para que su contruccion sea tal que ayude si o si en algun punto al medio ambiente, por lo que buena parte de sus componentes se hizo con material reciclado, previamente pasado por un control de calidad el cual asegure su correcto fucionamiento, el ejemplo mas facil de esto son los cables USB.</p>
+    <p class="fuente-texto">Innovador y práctico, nuestro producto, denominado WARMER, es una base diseñada para mantener caliente cualquier tipo de infusión. Su versatilidad se adapta a diversas tazas, ya que en lugar de calentar, prolonga la temperatura por un período extendido, evitando esos momentos desafortunados en los que olvidamos nuestra infusión y esta se enfría.
+
+        WARMER es la solución perfecta para aquellos que trabajan con una computadora de escritorio, notebook u otros dispositivos, ya que se puede conectar mediante un cable USB. Lo que lo distingue es su compromiso con el medio ambiente; gran parte de sus componentes se fabrican con materiales reciclados. Previo a su inclusión, cada componente pasa por un riguroso control de calidad para garantizar su funcionamiento óptimo. Un ejemplo claro de esto son los cables USB, que son producidos con materiales reciclados de alta calidad.
+        
+        Descubre una forma eco-amigable de disfrutar de tus infusiones favoritas con WARMER, donde la innovación y la sostenibilidad se fusionan para brindarte una experiencia única.</p>
     
     <div class="mainP">
-        <div>
-            <img src="../imagenes/warmer1.jpeg" class="warmerP" alt="Warmer">
-            <p class="textoP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut quasi voluptatem debitis cumque architecto repellat praesentium facere, dicta cupiditate.</p>        
+        <div class="card">
+            <figure>
+                <img src="/imagenes/warmer1.jpeg" alt="Warmer imagen1">
+            </figure>
+            <div class="contenido">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus maiores iste ea expedita dolorem perspiciatis?</p>
+            </div>
         </div>
-        <div>
-            <img src="../imagenes/warmerimg2.jpeg" class="warmerP" alt="Warmer">
-            <p class="textoP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, nam!</p>
+
+        <div class="card">
+            <figure>
+                <img src="/imagenes/warmerimg2.jpeg" alt="Warmer imagen2">
+            </figure>
+            <div class="contenido">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus maiores iste ea expedita dolorem perspiciatis?</p>
+            </div>
         </div>
         
     </div>
         
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
