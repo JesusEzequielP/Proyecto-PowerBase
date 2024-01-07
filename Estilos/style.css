@@ -35,6 +35,18 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.menu-inicial {
+  font-size: smaller;
+  color: #5e412f;
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+.menu-inicial:hover {
+  color: #78c0a8;
+  font-size: medium;
+}
+
 @media only screen and (max-width: 356px) {
   .titulo {
     font-size: 1.5em;
