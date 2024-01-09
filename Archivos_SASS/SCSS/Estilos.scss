@@ -293,8 +293,14 @@ display: flex;
 text-align: center;
 justify-content: center;
 flex-wrap: wrap;
+width: 50%;
+height: 20rem;
+    h3{
+        font-size: medium;
+    }
 
 .textoD{
+    font-size: small;
     width: 15rem;
     padding-left: 2rem;
     }
