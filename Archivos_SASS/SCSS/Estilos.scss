@@ -52,15 +52,7 @@ body{
         padding-top: 3rem;
         padding-bottom: 3rem;
         border-radius: 6px;
-        overflow: hidden; 
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-        cursor: default;
-        transition: all 400ms ease;
-            &:hover{
-                box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-                transform: translateY(-1%);
-            }
-            
+         
     }
     .fondo2 {
         width: 300px ;
@@ -178,18 +170,15 @@ body{
         padding: 1rem;
         text-align: center;
     }
-
+    .precio{
+        color: rgb(33, 201, 33);
+        font-size: large;
+        font-style: oblique;
+        
+    }
 }
 
-/*.warmerP{
-    width: 15rem;
-    height: 15rem;
-    border: 2px solid white;
-    flex-wrap: wrap;
-}*/
-.textoP{
-    width: 15rem;
-}
+
 /*contenido main................................................*/
 .mainP{
     display: flex;
@@ -209,26 +198,54 @@ body{
  .mapa{
      width: 25rem;
      height: 25rem;
-     margin: 0%;
-     padding: 1rem;
+     margin: 0px;
+     padding-bottom: 1rem;
  }
  /*contenido main...................................................*/
  .Mnosotros{
      display: flex;
      flex-wrap: wrap;
+     justify-content: space-around;
 
      /*titulo y texto main...............................................*/
-    .titulo-ubi{
+    .ubi-geo{
+        padding-bottom: 1rem;
+    }
+     .titulo-ubi{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
     padding-left: 1rem;
     flex-wrap: wrap;
+    font-size: medium;
+    margin: 0px;
+    background-color: #333;
+    color: white;
     }
     .texto-ubi{
         margin: 0%;
-        padding: 1rem;
         width: 20rem;
+        font-size: small;
+        padding: 4px;
+        background-color: rgb(233, 168, 72);
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    @media only screen and (max-width: 332px) {
+        .mapa{
+            width: 15rem;
+            height: 15rem;
+        }
+        .texto-ubi{
+            width: 100%;
+        }
+        .titulo-ubi{
+            width: 100%;
+        }
+        .fuente-texto{
+            font-size: smaller;
+        }
     }
  }
  
@@ -238,20 +255,8 @@ body{
          width: auto;
          height:16rem;   
      }
-     .texto-ubi{
-         width: auto;
-     }
-     .tituloN{
-         font-size: 1.5em;
-     }
  }
  
- @media only screen and (max-width: 332px) {
-     .mapa{
-         width: 15rem;
-         height: 15rem;
-     }
- }
 
  /*RESPONABLES EMPRESA..................................................................................*/
  /*MAIN..................................................................*/
@@ -262,60 +267,101 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
-/*ubicaion imagenes..................................................*/
+/*presentaciones de los directores..................................................*/
 .directores1{
 display: flex;
 align-items: center;
 justify-content: space-around;
 flex-wrap: wrap;
 padding-bottom: 1rem;
+    .presentacion{
+        width: 45%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        background-color: #33b187;
+        overflow: hidden; 
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        cursor: default;
+        transition: all 400ms ease;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        flex-wrap: wrap;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+                transform: translateY(-1%);
+            }
+    }
+    img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    }
+    h3{
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
 
 .directores2{
-display: flex;
-align-items: center;
-justify-content: space-around; 
-flex-wrap: wrap;
-padding-top: 1rem;
-padding-bottom: 2rem;
-}
-
-/*imagenes de directores..................................................*/
-.Dimg{
-width: 15rem;
-height: 15rem;
-border-radius: 50%;
-}
-
-/*texto directores..................................................*/
-.presentacion{
-display: flex;
-text-align: center;
-justify-content: center;
-flex-wrap: wrap;
-width: 50%;
-height: 20rem;
-    h3{
-        font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+        .presentacion{
+            width: 45%;
+            height: auto;
+            margin: 10px;
+            border-radius: 6px;
+            background-color: #33b187;
+            overflow: hidden; 
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            cursor: default;
+            transition: all 400ms ease;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            flex-wrap: wrap;
+                &:hover{
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+                    transform: translateY(-1%);
+                }
+        }
+        img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        }
+        h3{
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: small;
+            font-family: 'Times New Roman', Times, serif;
+        }
     }
 
-.textoD{
-    font-size: small;
-    width: 15rem;
-    padding-left: 2rem;
-    }
-}
-
-@media only screen and (max-width: 615px) {
-.tituloD{
-    font-size: 1.5em
-}
 .titulo{
     font-size: 1.5em;
     display: flex;
     justify-content: center;
 }
+@media only screen and (max-width: 526px){
+    h1{
+        font-size: large;
+    }
 }
+
+
 
 /*OPINIONES........................................................................................*/
 /*MAIN............................................................*/
@@ -328,7 +374,8 @@ height: 20rem;
 
 .forms{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
 
     .formulario {
@@ -353,6 +400,17 @@ height: 20rem;
     
     .campo textarea {
         height: 7rem; 
+    }
+    fieldset{
+        display:flex;
+        .opcion{
+            justify-content: center;
+            text-align: center;
+            border: 2px solid rgba(0, 0, 0, 0.562);
+            border-radius: 6px;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+            font-family: Arial, Helvetica, sans-serif
+        }
     }
 }
 

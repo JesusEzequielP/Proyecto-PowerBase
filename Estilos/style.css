@@ -110,14 +110,6 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
-  transition: all 400ms ease;
-}
-.Mindex .img-ppal:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-1%);
 }
 .Mindex .fondo2 {
   width: 300px;
@@ -243,15 +235,10 @@ body {
   padding: 1rem;
   text-align: center;
 }
-
-/*.warmerP{
-    width: 15rem;
-    height: 15rem;
-    border: 2px solid white;
-    flex-wrap: wrap;
-}*/
-.textoP {
-  width: 15rem;
+.card .precio {
+  color: rgb(33, 201, 33);
+  font-size: large;
+  font-style: oblique;
 }
 
 /*contenido main................................................*/
@@ -273,15 +260,19 @@ body {
 .mapa {
   width: 25rem;
   height: 25rem;
-  margin: 0%;
-  padding: 1rem;
+  margin: 0px;
+  padding-bottom: 1rem;
 }
 
 /*contenido main...................................................*/
 .Mnosotros {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   /*titulo y texto main...............................................*/
+}
+.Mnosotros .ubi-geo {
+  padding-bottom: 1rem;
 }
 .Mnosotros .titulo-ubi {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -289,29 +280,40 @@ body {
   justify-content: center;
   padding-left: 1rem;
   flex-wrap: wrap;
+  font-size: medium;
+  margin: 0px;
+  background-color: #333;
+  color: white;
 }
 .Mnosotros .texto-ubi {
   margin: 0%;
-  padding: 1rem;
   width: 20rem;
+  font-size: small;
+  padding: 4px;
+  background-color: rgb(233, 168, 72);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+@media only screen and (max-width: 332px) {
+  .Mnosotros .mapa {
+    width: 15rem;
+    height: 15rem;
+  }
+  .Mnosotros .texto-ubi {
+    width: 100%;
+  }
+  .Mnosotros .titulo-ubi {
+    width: 100%;
+  }
+  .Mnosotros .fuente-texto {
+    font-size: smaller;
+  }
 }
 
 @media only screen and (max-width: 435px) {
   .mapa {
     width: auto;
     height: 16rem;
-  }
-  .texto-ubi {
-    width: auto;
-  }
-  .tituloN {
-    font-size: 1.5em;
-  }
-}
-@media only screen and (max-width: 332px) {
-  .mapa {
-    width: 15rem;
-    height: 15rem;
   }
 }
 /*RESPONABLES EMPRESA..................................................................................*/
@@ -321,7 +323,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*ubicaion imagenes..................................................*/
+/*presentaciones de los directores..................................................*/
 .directores1 {
   display: flex;
   align-items: center;
@@ -329,49 +331,90 @@ body {
   flex-wrap: wrap;
   padding-bottom: 1rem;
 }
+.directores1 .presentacion {
+  width: 45%;
+  height: auto;
+  margin: 10px;
+  border-radius: 6px;
+  background-color: #33b187;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.directores1 .presentacion:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1%);
+}
+.directores1 img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.directores1 h3 {
+  font-size: medium;
+  font-family: "Times New Roman", Times, serif;
+}
+.directores1 p {
+  font-size: small;
+  font-family: "Times New Roman", Times, serif;
+}
 
 .directores2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
-
-/*imagenes de directores..................................................*/
-.Dimg {
-  width: 15rem;
-  height: 15rem;
+.directores2 .presentacion {
+  width: 45%;
+  height: auto;
+  margin: 10px;
+  border-radius: 6px;
+  background-color: #33b187;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.directores2 .presentacion:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1%);
+}
+.directores2 img {
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
 }
-
-/*texto directores..................................................*/
-.presentacion {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 50%;
-  height: 20rem;
-}
-.presentacion h3 {
+.directores2 h3 {
   font-size: medium;
+  font-family: "Times New Roman", Times, serif;
 }
-.presentacion .textoD {
+.directores2 p {
   font-size: small;
-  width: 15rem;
-  padding-left: 2rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
-@media only screen and (max-width: 615px) {
-  .tituloD {
-    font-size: 1.5em;
-  }
-  .titulo {
-    font-size: 1.5em;
-    display: flex;
-    justify-content: center;
+.titulo {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 526px) {
+  h1 {
+    font-size: large;
   }
 }
 /*OPINIONES........................................................................................*/
@@ -385,7 +428,8 @@ body {
 
 .forms {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .forms .formulario {
@@ -406,6 +450,17 @@ body {
 }
 .forms .campo textarea {
   height: 7rem;
+}
+.forms fieldset {
+  display: flex;
+}
+.forms fieldset .opcion {
+  justify-content: center;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.562);
+  border-radius: 6px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*boton enviar..........................................................*/
