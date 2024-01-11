@@ -206,7 +206,7 @@ body {
 
 /*fondo main...........................................................*/
 .fondo-mainP {
-  background-color: #bfe3c0;
+  background: linear-gradient(180deg, rgba(3, 212, 132, 0.801) 0%, rgba(218, 185, 3, 0.877) 100%);
   margin: 0rem;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 2rem;
@@ -219,8 +219,8 @@ body {
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
   transition: all 400ms ease;
+  cursor: default;
 }
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
@@ -319,7 +319,7 @@ body {
 /*RESPONABLES EMPRESA..................................................................................*/
 /*MAIN..................................................................*/
 .Mdirectores {
-  background-color: #fde98c;
+  background: linear-gradient(180deg, rgb(247, 220, 101) 0%, rgba(230, 131, 2, 0.87) 100%);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -364,6 +364,11 @@ body {
   font-size: small;
   font-family: "Times New Roman", Times, serif;
 }
+@media only screen and (max-width: 500px) {
+  .directores1 .presentacion {
+    width: 80%;
+  }
+}
 
 .directores2 {
   display: flex;
@@ -404,6 +409,11 @@ body {
 .directores2 p {
   font-size: small;
   font-family: "Times New Roman", Times, serif;
+}
+@media only screen and (max-width: 500px) {
+  .directores2 .presentacion {
+    width: 80%;
+  }
 }
 
 .titulo {

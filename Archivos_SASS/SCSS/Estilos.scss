@@ -142,21 +142,21 @@ body{
 }
 /*fondo main...........................................................*/
 .fondo-mainP{
-    background-color: #bfe3c0;
+    background: linear-gradient(180deg, rgba(3, 212, 132, 0.801) 0%, rgba(218, 185, 3, 0.877) 100%);
     margin: 0rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 2rem;
 }
 /*imagenes del producto.................................................*/
-
+@import "../base/maps";
 .card{
     width: 15rem;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden; 
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: map-get($card,  sombra );
+    transition: map-get($card, transicion);
     cursor: default;
-    transition: all 400ms ease;
         &:hover{
             box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
             transform: translateY(-3%);
@@ -262,7 +262,7 @@ body{
  /*MAIN..................................................................*/
 
 .Mdirectores{
-background-color: #fde98c;
+    background: linear-gradient(180deg, rgb(247, 220, 101) 0%, rgba(230, 131, 2, 0.87) 100%);
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -281,9 +281,9 @@ padding-bottom: 1rem;
         border-radius: 6px;
         background-color: #33b187;
         overflow: hidden; 
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        box-shadow: map-get($card , sombra);
         cursor: default;
-        transition: all 400ms ease;
+        transition: map-get($card , transicion );
         display: flex;
         justify-content: center;
         text-align: center;
@@ -307,6 +307,13 @@ padding-bottom: 1rem;
         font-size: small;
         font-family: 'Times New Roman', Times, serif;
     }
+    @media only screen and (max-width: 500px){
+        .presentacion{
+            width: 80%;
+        
+        }
+    }
+    
 }
 
 .directores2{
@@ -322,9 +329,9 @@ padding-bottom: 1rem;
             border-radius: 6px;
             background-color: #33b187;
             overflow: hidden; 
-            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            box-shadow: map-get($card , sombra );
             cursor: default;
-            transition: all 400ms ease;
+            transition: map-get($card , transicion );
             display: flex;
             justify-content: center;
             text-align: center;
@@ -348,6 +355,13 @@ padding-bottom: 1rem;
             font-size: small;
             font-family: 'Times New Roman', Times, serif;
         }
+        @media only screen and (max-width: 500px){
+            .presentacion{
+                width: 80%;
+            
+            }
+        }
+        
     }
 
 .titulo{
