@@ -3,7 +3,7 @@
 
 /*Header-INDEX.............................................*/
 
-@import "../components/header.scss";
+@import "../components/header";
 
 body{
     margin: 0%;
@@ -142,21 +142,21 @@ body{
 }
 /*fondo main...........................................................*/
 .fondo-mainP{
-    background-color: #bfe3c0;
+    background: linear-gradient(180deg, rgba(3, 212, 132, 0.801) 0%, rgba(218, 185, 3, 0.877) 100%);
     margin: 0rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 2rem;
 }
 /*imagenes del producto.................................................*/
-
+@import "../base/maps";
 .card{
     width: 15rem;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden; 
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: map-get($card,  sombra );
+    transition: map-get($card, transicion);
     cursor: default;
-    transition: all 400ms ease;
         &:hover{
             box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
             transform: translateY(-3%);
@@ -172,10 +172,14 @@ body{
     }
     .precio{
         color: rgb(33, 201, 33);
-        font-size: large;
-        font-style: oblique;
+        font-style: italic;
+        font-weight: bold; 
         
     }
+        .colores{
+            font-style: italic;
+            font-weight: bold; 
+        }
 }
 
 
@@ -190,7 +194,7 @@ body{
 /*MAIN......................*/
 .fondo-mainN{
     font-family: Arial, Helvetica, sans-serif;
-     background-color: #d9e8ae; /*link de paleta colores: https://paletadecolores.com.ar/paleta/5e412f/fcebb6/78c0a8/f07818/f0a830/*/
+     background: radial-gradient(circle,rgba(219, 137, 13, 0.938) 20%, rgba(0, 255, 128, 0.788) 100%); /*link de paleta colores: https://paletadecolores.com.ar/paleta/5e412f/fcebb6/78c0a8/f07818/f0a830/*/
  }
  /*Titulo ppal main...............................................*/
 
@@ -200,6 +204,7 @@ body{
      height: 25rem;
      margin: 0px;
      padding-bottom: 1rem;
+     border-radius: 10%;
  }
  /*contenido main...................................................*/
  .Mnosotros{
@@ -227,7 +232,7 @@ body{
         width: 20rem;
         font-size: small;
         padding: 4px;
-        background-color: rgb(233, 168, 72);
+        background-color: rgb(236, 195, 132);
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
     }
@@ -262,7 +267,7 @@ body{
  /*MAIN..................................................................*/
 
 .Mdirectores{
-background-color: #fde98c;
+    background: linear-gradient(180deg, rgb(247, 220, 101) 0%, rgba(230, 131, 2, 0.87) 100%);
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -281,9 +286,9 @@ padding-bottom: 1rem;
         border-radius: 6px;
         background-color: #33b187;
         overflow: hidden; 
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        box-shadow: map-get($card , sombra);
         cursor: default;
-        transition: all 400ms ease;
+        transition: map-get($card , transicion );
         display: flex;
         justify-content: center;
         text-align: center;
@@ -307,6 +312,13 @@ padding-bottom: 1rem;
         font-size: small;
         font-family: 'Times New Roman', Times, serif;
     }
+    @media only screen and (max-width: 500px){
+        .presentacion{
+            width: 80%;
+        
+        }
+    }
+    
 }
 
 .directores2{
@@ -322,9 +334,9 @@ padding-bottom: 1rem;
             border-radius: 6px;
             background-color: #33b187;
             overflow: hidden; 
-            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            box-shadow: map-get($card , sombra );
             cursor: default;
-            transition: all 400ms ease;
+            transition: map-get($card , transicion );
             display: flex;
             justify-content: center;
             text-align: center;
@@ -348,6 +360,13 @@ padding-bottom: 1rem;
             font-size: small;
             font-family: 'Times New Roman', Times, serif;
         }
+        @media only screen and (max-width: 500px){
+            .presentacion{
+                width: 80%;
+            
+            }
+        }
+        
     }
 
 .titulo{
