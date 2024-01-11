@@ -237,8 +237,12 @@ body {
 }
 .card .precio {
   color: rgb(33, 201, 33);
-  font-size: large;
-  font-style: oblique;
+  font-style: italic;
+  font-weight: bold;
+}
+.card .colores {
+  font-style: italic;
+  font-weight: bold;
 }
 
 /*contenido main................................................*/
@@ -252,7 +256,7 @@ body {
 /*MAIN......................*/
 .fondo-mainN {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #d9e8ae; /*link de paleta colores: https://paletadecolores.com.ar/paleta/5e412f/fcebb6/78c0a8/f07818/f0a830/*/
+  background: radial-gradient(circle, rgba(219, 137, 13, 0.938) 20%, rgba(0, 255, 128, 0.788) 100%); /*link de paleta colores: https://paletadecolores.com.ar/paleta/5e412f/fcebb6/78c0a8/f07818/f0a830/*/
 }
 
 /*Titulo ppal main...............................................*/
@@ -262,6 +266,7 @@ body {
   height: 25rem;
   margin: 0px;
   padding-bottom: 1rem;
+  border-radius: 10%;
 }
 
 /*contenido main...................................................*/
@@ -290,7 +295,7 @@ body {
   width: 20rem;
   font-size: small;
   padding: 4px;
-  background-color: rgb(233, 168, 72);
+  background-color: rgb(236, 195, 132);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
