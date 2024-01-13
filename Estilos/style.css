@@ -163,8 +163,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .ig-pwrbase:hover {
-  color: #f0a830;
-  font-size: larger;
+  color: #9c43b8;
+  transform: translateY(-3%);
 }
 
 /*Red Social...........................................................*/
@@ -177,8 +177,8 @@ body {
   justify-content: center;
 }
 .instagram img {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 /*PRODUCTO............................................................................................*/

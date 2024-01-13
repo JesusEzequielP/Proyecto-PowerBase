@@ -105,8 +105,8 @@ body{
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     &:hover{
-        color: #f0a830;
-        font-size: larger;
+        color: #9c43b8;
+        transform: translateY(-3%);
 
     }
 }
@@ -119,8 +119,8 @@ body{
     display: flex;
     justify-content: center;
     img{
-        width: 12px;
-        height: 12px;
+        width: 24px;
+        height: 24px;
     }
 }
 
