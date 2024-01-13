@@ -172,6 +172,15 @@ body {
   padding-left: 2rem;
 }
 
+.instagram {
+  display: flex;
+  justify-content: center;
+}
+.instagram img {
+  width: 12px;
+  height: 12px;
+}
+
 /*PRODUCTO............................................................................................*/
 /*complemento header*/
 .menu-inicial {
