@@ -211,6 +211,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 2rem;
 }
+.fondo-mainP nav {
+  background-color: #ffca67 !important;
+}
 
 /*imagenes del producto.................................................*/
 .card {
